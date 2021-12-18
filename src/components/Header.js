@@ -4,7 +4,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import {selectCars} from '../features/Car/carSlice';
 import {useSelector} from 'react-redux';
-import TLogo from "./logo.svg";
+import TLogo from "./image/logo.svg";
 //import Container from './components/Home.js'
 
 function Header() {

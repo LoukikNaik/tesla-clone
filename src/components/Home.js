@@ -2,10 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from './Header'
 import Section from './Section'
-import ModelS from './model-s.jpg';
-import Model3 from './model-3.jpg'
-import ModelX from './model-x.jpg'
-import ModelY from './model-y.jpg'
+import ModelS from './image/model-s.jpg';
+import Model3 from './image/model-3.jpg'
+import ModelX from './image/model-x.jpg'
+import ModelY from './image/model-y.jpg'
+import SolarPanel from './image/solar-panel.jpg'
+import SolarRoof from './image/solar-roof.jpg'
+import Accessories from './image/accessories.jpg'
 function Home() {
     return (
         <Container>
@@ -41,26 +44,26 @@ function Home() {
                 leftBtnTxt="Custom Order"
                 rightBtnTxt="Existing Inventory"
             />
-            {/* <Section
+            <Section
                 title="Lowest Cost Solar Panels in America"
                 description="Money Back Guarantee"
-                backgroundImg="solar-panel.jpg"
+                backgroundImg={SolarPanel}
                 leftBtnTxt="Order Now"
                 rightBtnTxt="Learn More"
             />
             <Section
                 title="Solar for New Roofs"
                 description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
-                backgroundImg="solar-roof.jpg"
+                backgroundImg={SolarRoof}
                 leftBtnTxt="Order Now"
                 rightBtnTxt="Learn More"
             />
             <Section
                 title="Accessories"
                 description=""
-                backgroundImg="accessories.jpg"
+                backgroundImg={Accessories}
                 leftBtnTxt="Shop now"
-            />  */}
+            /> 
         </Container>
     )
 }
