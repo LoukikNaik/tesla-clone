@@ -4,6 +4,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import {selectCars} from '../features/Car/carSlice';
 import {useSelector} from 'react-redux';
+import TLogo from "./logo.svg";
 //import Container from './components/Home.js'
 
 function Header() {
@@ -12,7 +13,7 @@ function Header() {
     return (
         <Container>
             <a>
-                <img src="/images/logo.svg" alt="" />
+                <img src={TLogo} alt="" />
             </a>
             <Menu>
                 {cars && cars.map((car, index)=>(
