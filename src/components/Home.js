@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Header from './Header'
 import Section from './Section'
 import ModelS from './model-s.jpg';
+import Model3 from './model-3.jpg'
+import ModelX from './model-x.jpg'
+import ModelY from './model-y.jpg'
 function Home() {
     return (
         <Container>
@@ -10,7 +13,7 @@ function Home() {
             <Section 
                 title="Model S"
                 description="Order Online for Touchless Delivery"
-                backgroundImg='model-s.jpg'
+                backgroundImg={ModelS}
                 leftBtnTxt="Custom Order"
                 rightBtnTxt="Existing Inventory"
 
@@ -18,7 +21,7 @@ function Home() {
             <Section 
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-3.jpg"
+                backgroundImg={Model3}
                 leftBtnTxt="Custom Order"
                 rightBtnTxt="Existing Inventory"
             />
@@ -26,7 +29,7 @@ function Home() {
                 id="x"
                 title="Model X"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-x.jpg"
+                backgroundImg={ModelX}
                 leftBtnTxt="Custom Order"
                 rightBtnTxt="Existing Inventory"
             />
@@ -34,11 +37,11 @@ function Home() {
                 id="Y"
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
-                backgroundImg="model-y.jpg"
+                backgroundImg={ModelY}
                 leftBtnTxt="Custom Order"
                 rightBtnTxt="Existing Inventory"
             />
-            <Section
+            {/* <Section
                 title="Lowest Cost Solar Panels in America"
                 description="Money Back Guarantee"
                 backgroundImg="solar-panel.jpg"
@@ -57,7 +60,7 @@ function Home() {
                 description=""
                 backgroundImg="accessories.jpg"
                 leftBtnTxt="Shop now"
-            /> 
+            />  */}
         </Container>
     )
 }

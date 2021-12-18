@@ -5,7 +5,7 @@ import Downarrow from './down-arrow.svg'
 
 function Section({title,description,leftBtnTxt,rightBtnTxt,backgroundImg}) {
     return (
-        <Wrap bgImage = {backgroundImg} >
+        <Wrap img = {backgroundImg} >
             <Fade bottom>
                 <ItemText>
                     <h1>{title}</h1>
@@ -41,7 +41,7 @@ const Wrap = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: ${props => `url("/images/${props.bgImage}")`};
+    background-image: ${props => `url(${props.img})`};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
