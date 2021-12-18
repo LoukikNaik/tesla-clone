@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from './Header'
 import Section from './Section'
+import ModelS from './model-s.jpg';
 function Home() {
     return (
         <Container>
@@ -56,7 +57,7 @@ function Home() {
                 description=""
                 backgroundImg="accessories.jpg"
                 leftBtnTxt="Shop now"
-            />
+            /> 
         </Container>
     )
 }
